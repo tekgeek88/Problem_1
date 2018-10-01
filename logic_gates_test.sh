@@ -31,7 +31,33 @@ ECHO ""
 
 ECHO "Testing NOT"
 ECHO ""
-ECHO | ./logic_gates -n 0 1
+ECHO | ./logic_gates -n 0 0
 ECHO | ./logic_gates -n 1 0
 ECHO ""
 ECHO ""
+
+
+ECHO "Testing Quad AND"
+ECHO ""
+ECHO | ./logic_gates -q 1 1 1 1
+ECHO | ./logic_gates -q 1 1 1 0
+ECHO | ./logic_gates -q 1 1 0 1
+ECHO | ./logic_gates -q 1 1 0 0
+
+ECHO | ./logic_gates -q 1 0 1 1
+ECHO | ./logic_gates -q 1 0 1 0
+ECHO | ./logic_gates -q 1 0 0 1
+ECHO | ./logic_gates -q 1 0 0 0
+
+ECHO | ./logic_gates -q 0 1 1 1
+ECHO | ./logic_gates -q 0 1 1 0
+ECHO | ./logic_gates -q 0 1 0 1
+ECHO | ./logic_gates -q 0 1 0 0
+
+ECHO | ./logic_gates -q 0 0 1 1
+ECHO | ./logic_gates -q 0 0 1 0
+ECHO | ./logic_gates -q 0 0 0 1
+ECHO | ./logic_gates -q 0 0 0 0
+ECHO ""
+ECHO ""
+
